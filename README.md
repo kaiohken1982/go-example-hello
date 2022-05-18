@@ -17,7 +17,19 @@ Esegui tidy
 go mod tidy
 ```
 
-Modifica a mano il file go.mod 
+Aggiungi il riferimento al modulo esterno locale
+
+```
+replace example.com/greetings => ../greetings
+```
+
+Lancia tidy 
+
+```
+go mod tidy
+```
+
+Nel file mod sarà inserito questo contenuto
 
 ```
 [...]
